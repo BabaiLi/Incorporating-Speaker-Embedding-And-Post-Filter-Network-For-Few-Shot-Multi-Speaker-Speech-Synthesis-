@@ -1,3 +1,3 @@
-# ICASSP_2022
+# Incorporating Speaker Embedding And Post-Filter Network For Few-Shot Multi-Speaker Speech Synthesis System
 
-There is ICASP_2022 audio demo: https://babaili.github.io/ICASSP_2022/
+There is audio demo: https://babaili.github.io/ICASSP_2022/

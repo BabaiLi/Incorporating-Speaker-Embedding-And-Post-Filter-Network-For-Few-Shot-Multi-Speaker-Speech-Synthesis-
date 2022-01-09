@@ -378,3 +378,67 @@
         </tr>
     </table>
 </div>
+
+# Experiment
+## How many unseen speaker audio you need that can generate good audio
+<div style="border-style:none;width:600;">
+    <table>
+        <tr>
+            <th> </th>
+            <th> Men </th>
+            <th> Women </th>
+        </tr>
+        <tr>
+            <td>1 Audio</td>
+            <td>
+                <audio controls>
+                    <source src="audio/outside/Men/1187/1187-pf-1.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="audio/outside/Women/822/822-pf-1.wav" type="audio/wav">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td>5 Audio</td>
+            <td>
+                <audio controls>
+                    <source src="audio/outside/Men/1187/1187-pf-5.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="audio/outside/Women/822/822-pf-5.wav" type="audio/wav">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td>10 Audio</td>
+            <td>
+                <audio controls>
+                    <source src="audio/outside/Men/1187/1187-pf-10.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="audio/outside/Women/822/822-pf-10.wav" type="audio/wav">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td>50 Audio</td>
+            <td>
+                <audio controls>
+                    <source src="audio/outside/Men/1187/1187-pf-50.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="audio/outside/Women/822/822-pf-50.wav" type="audio/wav">
+                </audio>
+            </td>
+        </tr>
+    </table>
+</div>

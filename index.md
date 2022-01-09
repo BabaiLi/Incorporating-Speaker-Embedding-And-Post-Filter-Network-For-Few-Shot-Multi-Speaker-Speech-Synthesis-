@@ -553,7 +553,11 @@ It seems 5~10 Audio will be stability, and 100 Audio is the best.
 </table>
 
 <b><font size="4">Increase the residual_channels </font></b>
-<b>with 30 residual_layers and 10 conv_dilation</b>
+<b>
+    '''diff
+    with -30- residual_layers and -10- conv_dilation
+    '''
+</b>
 <br>We found at least need 192 dim for residual_channels
 <br>
 <div style="border-style:none;width:600;">
@@ -594,6 +598,15 @@ It seems 5~10 Audio will be stability, and 100 Audio is the best.
             <th></th>
             <th> Audio </th>
             <th> Parameter </th>
+        </tr>
+        <tr>
+            <td> 30-residual_layers </td>
+            <td>  
+                <audio controls>
+                    <source src="audio/bad/30-192-10.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td> 13.27 MB </td>
         </tr>
         <tr>
             <td> 10-residual_layers </td>

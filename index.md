@@ -554,9 +554,15 @@ It seems 5~10 Audio will be stability, and 100 Audio is the best.
 
 <b><font size="4">Increase the residual_channels </font></b>
 <b>
-    '''diff
-    with -30- residual_layers and -10- conv_dilation
-    '''
+    with 
+    ```diff
+    - 30 -
+    ```
+    residual_layers and 
+    ```diff
+    - 10 -
+    ```
+    conv_dilation
 </b>
 <br>We found at least need 192 dim for residual_channels
 <br>

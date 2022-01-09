@@ -536,7 +536,7 @@ It seems 5~10 Audio will be stability, and 100 Audio is the best.
 </div>
 
 ## Diffwave Post-Filter Parameter Fix
-<b><font size="4">Original Parameter: </fon></b>
+<b><font size="4">Original Parameter: </font></b>
 <br>residual_channels = 64
 <br>residual_layers = 30
 <br>parameters = 17.9 MB
@@ -551,7 +551,7 @@ It seems 5~10 Audio will be stability, and 100 Audio is the best.
     </tr>
 </table>
 
-<b><font size="4">Increase the residual_channels </fon></b>
+<b><font size="4">Increase the residual_channels </font></b>
 <div style="border-style:none;width:600;">
     <table>
         <tr>
@@ -580,7 +580,7 @@ It seems 5~10 Audio will be stability, and 100 Audio is the best.
     </table>
 </div>
 
-<b><font size="4">Reduce the residual_layers </fon></b>
+<b><font size="4">Reduce the residual_layers </font></b>
 <div style="border-style:none;width:600;">
     <table>
         <tr>
@@ -614,4 +614,3 @@ It seems 5~10 Audio will be stability, and 100 Audio is the best.
 <br>residual_layers = 10
 <br>parameters = 48.1 MB
 <br>
-<br> *notice: Post-Net's Parameter = 

@@ -539,7 +539,8 @@ It seems 5~10 Audio will be stability, and 100 Audio is the best.
 <b><font size="4">Original Parameter from the diffwave paper: </font></b>
 <br>residual_channels = 64
 <br>residual_layers = 30
-<br>parameters = 17.9 MB
+<br>conv_dilation = 10
+<br>parameters = 1.47 MB
 <table>
     <tr>
         <td> Audio (broken) </td>
@@ -552,6 +553,7 @@ It seems 5~10 Audio will be stability, and 100 Audio is the best.
 </table>
 
 <b><font size="4">Increase the residual_channels </font></b>
+<b>with 30 residual_layers and 10 conv_dilation</b>
 <br>We found at least need 192 dim for residual_channels
 <br>
 <div style="border-style:none;width:600;">
@@ -562,27 +564,28 @@ It seems 5~10 Audio will be stability, and 100 Audio is the best.
             <th> Parameter </th>
         </tr>
         <tr>
-            <td> 128-residual_channels (30 residual_layers.) </td>
+            <td> 128-residual_channels </td>
             <td>  
                 <audio controls>
                     <source src="audio/bad/30-128-10.wav" type="audio/wav">
                 </audio>
             </td>
-            <td> 63.0 MB </td>
+            <td> 5.22 MB </td>
         </tr>
         <tr>
-            <td> 192-residual_channels (30 residual_layers.) </td>
+            <td> 192-residual_channels </td>
             <td>  
                 <audio controls>
                     <source src="audio/bad/30-192-10.wav" type="audio/wav">
                 </audio>
             </td>
-            <td> 159.5 MB </td>
+            <td> 13.27 MB </td>
         </tr>
     </table>
 </div>
 
 <b><font size="4">Reduce the residual_layers </font></b>
+<b>with 192-residual_channels and 10 conv_dilation.</b>
 <br>We found at least need 10 layers for residual_layers
 <br>
 <div style="border-style:none;width:600;">
@@ -593,22 +596,63 @@ It seems 5~10 Audio will be stability, and 100 Audio is the best.
             <th> Parameter </th>
         </tr>
         <tr>
-            <td> 10-residual_layers (with 192-residual_channels.) </td>
+            <td> 10-residual_layers </td>
             <td>  
                 <audio controls>
                     <source src="audio/bad/10-192-10.wav" type="audio/wav">
                 </audio>
             </td>
-            <td> 48.1 MB </td>
+            <td> 3.99 MB </td>
         </tr>
         <tr>
-            <td> 5-residual_layers (with 192-residual_channels.) </td>
+            <td> 5-residual_layers </td>
             <td>  
                 <audio controls>
                     <source src="audio/bad/5-192-10.wav" type="audio/wav">
                 </audio>
             </td>
-            <td> 26.2 MB </td>
+            <td> 2.18 MB </td>
+        </tr>
+    </table>
+</div>
+
+<b><font size="4">Reduce the conv_dilation </font></b>
+<b>with 192-residual_channels and 10-residual_layers.</b>
+<br>We found more conv_dilation get worse voice quality.
+<br>
+<div style="border-style:none;width:600;">
+    <table>
+        <tr>
+            <th></th>
+            <th> Audio </th>
+            <th> Parameter </th>
+        </tr>
+        <tr>
+            <td> 10-conv_dilation </td>
+            <td>  
+                <audio controls>
+                    <source src="audio/bad/10-192-10.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td> 3.99 MB </td>
+        </tr>
+        <tr>
+            <td> 5-conv_dilation </td>
+            <td>  
+                <audio controls>
+                    <source src="audio/bad/10-192-5.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td> 3.99 MB </td>
+        </tr>
+        <tr>
+            <td> 1-conv_dilation </td>
+            <td>  
+                <audio controls>
+                    <source src="audio/bad/10-192-1.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td> 3.99 MB </td>
         </tr>
     </table>
 </div>
@@ -616,5 +660,7 @@ It seems 5~10 Audio will be stability, and 100 Audio is the best.
 <b> Final parameter setting for our TTS Model: </b>
 <br>residual_channels = 192
 <br>residual_layers = 10
+<br>conv_dilation = 1
 <br>parameters = 48.1 MB
 <br>
+<br> *Notice: Post-Net's parameters = 4.35 MB

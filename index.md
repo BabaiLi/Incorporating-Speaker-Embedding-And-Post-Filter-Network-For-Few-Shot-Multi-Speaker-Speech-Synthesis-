@@ -380,7 +380,11 @@
 </div>
 
 # Experiment
-## How many unseen speaker audio you need that can generate good audio
+## How many unseen speaker audio you need that can generate good audio?
+<b>
+It seems 5~10 Audio will be stability, and 100 Audio is the best.
+</b>
+
 <div style="border-style:none;width:600;">
     <table>
         <tr>
@@ -530,3 +534,84 @@
         </tr>
     </table>
 </div>
+
+## Diffwave Post-Filter Parameter Fix
+<b><font size="4">Original Parameter: </fon></b>
+<br>residual_channels = 64
+<br>residual_layers = 30
+<br>parameters = 17.9 MB
+<table>
+    <tr>
+        <td> Audio </td>
+        <td>
+            <audio controls>
+                <source src="audio/bad/30-64-10.wav" type="audio/wav">
+            </audio>
+        </td>
+    </tr>
+</table>
+
+<b><font size="4">Increase the residual_channels </fon></b>
+<div style="border-style:none;width:600;">
+    <table>
+        <tr>
+            <th></th>
+            <th> Audio </th>
+            <th> Parameter </th>
+        </tr>
+        <tr>
+            <td> 128-residual_channels (30 residual_layers.) </td>
+            <td>  
+                <audio controls>
+                    <source src="audio/bad/30-128-10.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td> 63.0 MB </td>
+        </tr>
+        <tr>
+            <td> 192-residual_channels (30 residual_layers.) </td>
+            <td>  
+                <audio controls>
+                    <source src="audio/bad/30-192-10.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td> 159.5 MB </td>
+        </tr>
+    </table>
+</div>
+
+<b><font size="4">Reduce the residual_layers </fon></b>
+<div style="border-style:none;width:600;">
+    <table>
+        <tr>
+            <th></th>
+            <th> Audio </th>
+            <th> Parameter </th>
+        </tr>
+        <tr>
+            <td> 10-residual_layers (with 192-residual_channels.) </td>
+            <td>  
+                <audio controls>
+                    <source src="audio/bad/10-192-10.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td> 48.1 MB </td>
+        </tr>
+        <tr>
+            <td> 5-residual_layers (with 192-residual_channels.) </td>
+            <td>  
+                <audio controls>
+                    <source src="audio/bad/5-192-10.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td> 26.2 MB </td>
+        </tr>
+    </table>
+</div>
+
+<b> Final parameter setting for our TTS Model: </b>
+<br>residual_channels = 192
+<br>residual_layers = 10
+<br>parameters = 48.1 MB
+<br>
+<br> *notice: Post-Net's Parameter = 

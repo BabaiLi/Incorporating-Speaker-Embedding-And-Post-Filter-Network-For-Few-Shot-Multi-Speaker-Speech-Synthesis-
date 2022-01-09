@@ -556,11 +556,11 @@ It seems 5~10 Audio will be stability, and 100 Audio is the best.
 <b>
     with 
     ```diff
-    - 30 -
+    @@ 30
     ```
     residual_layers and 
     ```diff
-    - 10 -
+    @@ 10
     ```
     conv_dilation
 </b>

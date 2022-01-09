@@ -536,13 +536,13 @@ It seems 5~10 Audio will be stability, and 100 Audio is the best.
 </div>
 
 ## Diffwave Post-Filter Parameter Fix
-<b><font size="4">Original Parameter: </font></b>
+<b><font size="4">Original Parameter from the diffwave paper: </font></b>
 <br>residual_channels = 64
 <br>residual_layers = 30
 <br>parameters = 17.9 MB
 <table>
     <tr>
-        <td> Audio </td>
+        <td> Audio (broken) </td>
         <td>
             <audio controls>
                 <source src="audio/bad/30-64-10.wav" type="audio/wav">

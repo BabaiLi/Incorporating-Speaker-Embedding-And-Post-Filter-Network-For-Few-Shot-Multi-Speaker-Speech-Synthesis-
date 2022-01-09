@@ -385,8 +385,8 @@
     <table>
         <tr>
             <th> </th>
-            <th> Men </th>
-            <th> Women </th>
+            <th> Men-1187 </th>
+            <th> Men-1745 </th>
         </tr>
         <tr>
             <td>1 Audio</td>
@@ -397,7 +397,7 @@
             </td>
             <td>
                 <audio controls>
-                    <source src="audio/outside/Women/822/822-pf-1.wav" type="audio/wav">
+                    <source src="audio/outside/Men/1745/1745-pf-1.wav" type="audio/wav">
                 </audio>
             </td>
         </tr>
@@ -410,7 +410,7 @@
             </td>
             <td>
                 <audio controls>
-                    <source src="audio/outside/Women/822/822-pf-5.wav" type="audio/wav">
+                    <source src="audio/outside/Men/1745/1745-pf-5.wav" type="audio/wav">
                 </audio>
             </td>
         </tr>
@@ -423,7 +423,7 @@
             </td>
             <td>
                 <audio controls>
-                    <source src="audio/outside/Women/822/822-pf-10.wav" type="audio/wav">
+                    <source src="audio/outside/Men/1745/1745-pf-10.wav" type="audio/wav">
                 </audio>
             </td>
         </tr>
@@ -436,7 +436,69 @@
             </td>
             <td>
                 <audio controls>
+                    <source src="audio/outside/Men/1745/1745-pf-50.wav" type="audio/wav">
+                </audio>
+            </td>
+        </tr>
+    </table>
+</div>
+
+<div style="border-style:none;width:600;">
+    <table>
+        <tr>
+            <th> </th>
+            <th> Women-822 </th>
+            <th> Women-1197 </th>
+        </tr>
+        <tr>
+            <td>1 Audio</td>
+            <td>
+                <audio controls>
+                    <source src="audio/outside/Women/822/822-pf-1.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="audio/outside/Women/1197/1197-pf-1.wav" type="audio/wav">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td>5 Audio</td>
+            <td>
+                <audio controls>
+                    <source src="audio/outside/Women/822/822-pf-5.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="audio/outside/Women/1197/1197-pf-5.wav" type="audio/wav">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td>10 Audio</td>
+            <td>
+                <audio controls>
+                    <source src="audio/outside/Women/822/822-pf-10.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="audio/outside/Women/1197/1197-pf-10.wav" type="audio/wav">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td>50 Audio</td>
+            <td>
+                <audio controls>
                     <source src="audio/outside/Women/822/822-pf-50.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="audio/outside/Women/1197/1197-pf-50.wav" type="audio/wav">
                 </audio>
             </td>
         </tr>

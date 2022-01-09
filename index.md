@@ -440,6 +440,19 @@
                 </audio>
             </td>
         </tr>
+        <tr>
+            <td>100 Audio</td>
+            <td>
+                <audio controls>
+                    <source src="audio/outside/Men/1187/pf.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="audio/outside/Men/1745/pf.wav" type="audio/wav">
+                </audio>
+            </td>
+        </tr>
     </table>
 </div>
 
@@ -499,6 +512,19 @@
             <td>
                 <audio controls>
                     <source src="audio/outside/Women/1197/1197-pf-50.wav" type="audio/wav">
+                </audio>
+            </td>
+        </tr>
+        <tr>
+            <td>100 Audio</td>
+            <td>
+                <audio controls>
+                    <source src="audio/outside/Women/822/pf.wav" type="audio/wav">
+                </audio>
+            </td>
+            <td>
+                <audio controls>
+                    <source src="audio/outside/Women/1197/pf.wav" type="audio/wav">
                 </audio>
             </td>
         </tr>

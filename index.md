@@ -552,7 +552,7 @@ It seems 5~10 Audio will be stability, and 100 Audio is the best.
 </table>
 
 <b><font size="4">Increase the residual_channels </font></b>
-<br>We found aleast need 192 dim for residual_channels
+<br>We found at least need 192 dim for residual_channels
 <br>
 <div style="border-style:none;width:600;">
     <table>
@@ -583,7 +583,7 @@ It seems 5~10 Audio will be stability, and 100 Audio is the best.
 </div>
 
 <b><font size="4">Reduce the residual_layers </font></b>
-<br>We found aleast need 10 layers for residual_layers
+<br>We found at least need 10 layers for residual_layers
 <br>
 <div style="border-style:none;width:600;">
     <table>

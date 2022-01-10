@@ -670,6 +670,6 @@ It seems 5~10 Audio will be stability, and 100 Audio is the best.
 <br>residual_channels = 192
 <br>residual_layers = 10
 <br>conv_dilation = 1
-<br>parameters = 48.1 MB
+<br>parameters = 3.99 MB
 <br>
 <br> *Notice: Post-Net's parameters = 4.35 MB
